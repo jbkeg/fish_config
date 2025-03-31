@@ -55,10 +55,6 @@ status --is-interactive; and source (pyenv virtualenv-init - | psub)
 # Set python as python3
 # alias python python3
 
-# fvm
-alias flutter="fvm flutter"
-alias dart="fvm dart"
-
 # github
 if test -z "$SSH_AUTH_SOCK"
     eval (ssh-agent -c)
