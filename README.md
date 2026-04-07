@@ -2,6 +2,8 @@
 
 Jons' personal fish configuration enhanced with [Fisher](https://github.com/jorgebucaran/fisher) and [Tide](https://github.com/IlanCosman/tide)
 
+> Deprecated: this repository now forwards into [`dotfiles`](/Users/suptest/.dotfiles/dotfiles). Use the `fish-cli` profile there for ongoing setup and changes.
+
 ## Table of contents
 
 - [fish_config](#fish_config)
@@ -23,13 +25,17 @@ Jons' personal fish configuration enhanced with [Fisher](https://github.com/jorg
 
 ### Install
 
-Run installation script
+Run the compatibility wrapper to forward into the consolidated repo:
 
 ```fish
 ./install.fish
 ```
 
-> Above command will install `fisher` with `other plugins` and `tide`. and symlink `fish config` and `kitty config` under `$XDG_CONFIG_HOME` or `$HOME/.config` as default.
+Equivalent command in the consolidated repo:
+
+```sh
+../dotfiles/bootstrap/install --profile fish-cli --links
+```
 
 ### Post-Install
 
@@ -53,6 +59,5 @@ Run installation script
 ### Uninstallation
 
 ```fish
-./uninstall.sh
-rm -rf /path/to/fish_config/repo
+./uninstall.fish
 ```
